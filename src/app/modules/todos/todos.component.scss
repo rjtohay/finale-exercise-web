@@ -1,0 +1,39 @@
+.header {
+  text-align: center;
+  background-color: gainsboro;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.content {
+  display: grid;
+  gap: 1rem;
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    .card {
+      width: 30dvw;
+    }
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    .card {
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .card-footer {
+        display: flex;
+        justify-content: end;
+        gap: 8px;
+      }
+    }
+  }
+}
